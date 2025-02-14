@@ -8,7 +8,6 @@ struct Pessoa {
     int idade;
     float altura;
 };
-
 int main() {
     struct Pessoa pessoas[MAX_PESSOAS];
     int i;
