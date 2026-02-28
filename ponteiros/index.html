@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Login</title>
+</head>
+<body>
+
+    <h2>Acesse sua conta</h2>
+
+<form action="cadastro_pet.html" method="GET" enctype="multipart/form-data">        
+        <div>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+        </div>
+        <br>
+
+        <div>
+            <label for="senha">Senha:</label><br>
+            <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
+        </div>
+        <br>
+
+        <div>
+            <label for="documento_login">Anexar Documento de Validação (Opcional):</label><br>
+            <input type="file" id="documento_login" name="documento_login" accept=".pdf, .jpg, .png">
+        </div>
+        <br>
+
+        <div>
+            <button type="submit">Entrar</button>
+            <button type="reset">Limpar Dados</button>
+        </div>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pets</title>
+</head>
+<body>
+
+    <h2>Cadastro de Novo Pet</h2>
+
+    <form action="/processar-cadastro-pet" method="POST" enctype="multipart/form-data">
+        
+        <fieldset>
+            <legend>Dados do Animal</legend>
+
+            <div>
+                <label for="nome_pet">Nome do Pet:</label><br>
+                <input type="text" id="nome_pet" name="nome_pet" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="especie">Espécie:</label><br>
+                <select id="especie" name="especie" required>
+                    <option value="">Selecione...</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="ave">Ave</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+                <label>Porte do Animal:</label><br>
+                <input type="radio" id="porte_pequeno" name="porte" value="pequeno" required>
+                <label for="porte_pequeno">Pequeno</label>
+                
+                <input type="radio" id="porte_medio" name="porte" value="medio">
+                <label for="porte_medio">Médio</label>
+                
+                <input type="radio" id="porte_grande" name="porte" value="grande">
+                <label for="porte_grande">Grande</label>
+            </div>
+            <br>
+
+            <div>
+                <label for="documento_pet">Anexar Carteira de Vacinação ou Foto:</label><br>
+                <input type="file" id="documento_pet" name="documento_pet" accept="image/*, application/pdf" required>
+            </div>
+        </fieldset>
+        <br>
+
+        <div>
+            <button type="submit">Cadastrar Pet</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
